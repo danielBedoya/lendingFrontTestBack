@@ -45,5 +45,6 @@ These instructions will help you set up and run your Flask project locally.
 
     Execute the Flask application using the provided run.sh script or by running the Flask development server:
     ```bash
-    python run.py```
+    python run.py
+    ```
     
