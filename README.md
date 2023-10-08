@@ -42,7 +42,8 @@ These instructions will help you set up and run your Flask project locally.
     pip install -r requirements.txt
     ```
 4. **Set environment var**:
-    Create a .env var and add following var
+
+    Create a .env file and add following var
     ```ini
     FRONT_URL=http://localhost:3000
     ```
