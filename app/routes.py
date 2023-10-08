@@ -8,7 +8,11 @@ def loan_application():
     data = request.get_json()
     tax_id = data.get('tax_id')
     business_name = data.get('business_name')
-    requested_amount = int(data.get('requested_amount'))
+    try:
+        requested_amount = int(data.get('requested_amount'))
+    except Exception as e:
+        return jsonify({'error': 'requested_amount must be int'}), 400
+        
     decision = ''
 
     if requested_amount > 50000:
